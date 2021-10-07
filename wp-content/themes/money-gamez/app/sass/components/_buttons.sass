@@ -1,0 +1,148 @@
+.btn
+	display: inline-block
+	padding: 13px 15px
+	color: #1B1237
+	font-weight: 500
+	font-size: 16px
+	line-height: 19px
+	letter-spacing: 0.05em
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+	border: 0
+	border-radius: 25px
+	transition: $transition
+	cursor: pointer
+	position: relative
+
+	//&-white
+	//	color: $color-text
+	//	background-color: $color-white
+	//
+	//	&:hover,
+	//	&:focus,
+	//	&:active
+	//		color: $color-blue
+	//
+	//&-blue
+	//	color: $color-white
+	//	background-color: $color-accent
+	//
+	//	&:hover,
+	//	&:focus,
+	//	&:active
+	//		background-color: #556CEF
+
+	&-demo,
+	&-play
+		width: 155px
+
+	&-demo
+		color: #fff
+		background-color: #212A73
+
+		&:hover,
+		&:focus,
+		&:active
+			color: #fff
+			box-shadow: 8px 8px 16px rgba(33, 42, 115, 0.6)
+
+	&-play
+		background-color: #00FF24
+
+		&:hover,
+		&:focus,
+		&:active
+			box-shadow: 8px 8px 16px rgba(0, 255, 36, 0.5)
+
+	&-review
+		padding: 5px
+		color: $color-white
+		text-decoration: underline
+
+		&:hover
+			text-decoration: none
+
+	&-site
+		padding: 13px 30px
+		background-color: #00FF24
+
+		&:hover,
+		&:focus,
+		&:active
+			box-shadow: 8px 8px 16px rgba(0, 255, 36, 0.5)
+
+	&-border
+		padding: 13px 20px
+		color: $color-text
+		background-color: $color-white
+		border: 2px solid $color-border
+
+		&:hover
+			color: $color-blue
+
+	&-more
+		padding: 7px 26px
+		color: $color-grey
+		font-size: 14px
+		text-transform: none
+		border: 2px solid $color-border
+
+	&-main
+		background-color: #00FF24
+
+		&:hover,
+		&:focus,
+		&:active
+			box-shadow: 8px 8px 16px rgba(0, 255, 36, 0.5)
+
+	&-light
+		color: $color-dark
+
+	&-submit
+		color: $color-text
+		background-color: #FFC529
+
+		&:hover,
+		&:focus,
+		&:active
+			box-shadow: 5px 5px 10px rgba(207, 159, 31, 0.6)
+
+	&-big
+		padding: 15px 42px
+		+r(1259)
+			padding: 15px 30px
+
+	&-fullwidth
+		width: 100%
+		text-align: center
+
+//#return-to-top
+//	position: fixed
+//	bottom: 20px
+//	left: calc(100% - 60px)
+//	width: 39px
+//	height: 73px
+//	opacity: 0.95
+//	background-color: rgba(#ff2424, .75)
+//	border-radius: 20px
+//	z-index: 5
+//	display: none
+//	transition: all 0.3s ease
+//
+//	span
+//		display: block
+//		margin: 0 auto
+//		position: relative
+//		width: 21px
+//		height: 15px
+//		top: 23px
+//		+png(btn-top)
+//		background-repeat: no-repeat
+//		transition: all 0.3s ease
+//
+//	&:hover
+//		background-color: #ff2424
+//
+//		span
+//			top: 13px

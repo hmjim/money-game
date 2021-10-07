@@ -1,0 +1,63 @@
+.news
+	width: 100%
+	padding-left: 15px
+	padding-right: 15px
+	margin-bottom: 30px
+
+	&__inner
+		display: flex
+		flex-wrap: wrap
+
+	&__img
+		width: 25%
+		display: block
+		border-radius: $border-radius 0 0 $border-radius
+		overflow: hidden
+		+r(1259)
+			width: 50%
+		+r(767)
+			width: 100%
+			border-radius: $border-radius $border-radius 0 0
+
+	&__text
+		padding: 15px 15px 15px 30px
+		width: 75%
+		background-color: #375A9E
+		border-left-width: 0
+		border-radius: 0 $border-radius $border-radius 0
+		+r(1259)
+			width: 50%
+		+r(767)
+			padding: 20px 15px
+			width: 100%
+			border-left-width: 2px
+			border-top-width: 0
+			border-radius: 0 0 $border-radius $border-radius
+
+	&__title
+		display: inline-block
+		color: #A5C2FA
+		font-size: 18px
+		font-weight: 500
+		text-decoration: none
+		margin-bottom: 10px
+
+		&:hover
+			color: #A5C2FA
+			text-decoration: underline
+
+	&__descr
+		font-size: 16px
+		color: $color-white
+
+		a
+			color: #a9a6a6
+			text-decoration: none
+
+			&:hover
+				color: $color-accent
+
+		*
+
+			&:last-child
+				margin-bottom: 0

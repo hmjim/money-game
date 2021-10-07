@@ -1,0 +1,374 @@
+@import ../helpers/mixins
+@import ../base/variables
+
+.custom-widget
+	max-width: 270px
+	margin: 0 auto
+
+	&:not(:last-child)
+		margin-bottom: 50px
+
+	&__title
+		padding: 20px
+		margin: 0
+		color: #dee2ff
+		font-weight: 500
+		font-size: 16px
+		line-height: 19px
+		letter-spacing: 0.05em
+		text-align: center
+		text-transform: uppercase
+		background: #162251
+		border-radius: 15px 15px 0 0
+		display: flex
+		align-items: center
+		justify-content: center
+
+		svg
+			margin-right: 15px
+
+	&__list
+		margin: 0
+		padding: 20px
+		list-style-type: none
+		background-color: #212a73
+		border-radius: 0 0 15px 15px
+
+	// widget top casino
+	&__casino
+
+		&-list
+			counter-reset: cas
+
+		&-item
+			padding: 30px 23px
+			background-color: $color-white
+			border: 2px solid rgba(46, 71, 215, 0.5)
+			border-radius: 30px
+
+			&:not(:last-child)
+				margin-bottom: 20px
+
+			.percent-bar
+
+				&::before
+					color: $color-accent
+
+		&-img
+			display: block
+			width: 150px
+			margin: 0 auto 30px
+			position: relative
+
+			&::before
+				position: absolute
+				counter-increment: cas
+				content: counter(cas)
+				top: 0
+				left: -35px
+				width: 50px
+				text-align: center
+				font-weight: 700
+				font-size: 60px
+				line-height: 54px
+				background: linear-gradient(135deg, #00d0ff 0%,#fff 75%,#fff 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d0ff', endColorstr='#ffffff',GradientType=1 )
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+
+		&-nav
+			display: flex
+			justify-content: space-between
+
+			.btn-border,
+			.btn-site
+				width: 105px
+				line-height: 16px
+
+
+	// widget top slots
+	&__slot
+
+		&-item
+			display: flex
+			align-items: center
+			text-decoration: none
+
+			&-wrap
+
+				&:not(:last-child)
+					margin-bottom: 10px
+
+		&-thumb
+			display: block
+			flex-shrink: 0
+			position: relative
+
+			img
+				border-radius: 15px
+
+		&-info
+			flex-grow: 1
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+
+		&-position,
+		&-rate
+			padding: 3px 10px
+			color: #FFF
+			font-size: 11px
+			line-height: 13px
+			text-align: center
+			border-radius: 40px
+			margin-bottom: 8px
+
+		&-position
+			border: 1px solid #00FF24
+			box-sizing: border-box
+			margin-right: 5px
+
+		&-rate
+			display: flex
+			align-items: center
+			background: linear-gradient(90deg, #FF2053 0%, #FF3F00 100%)
+
+			svg
+				margin-right: 3px
+
+		&-title
+			width: 100%
+			padding: 0 10px
+			margin: 0
+			font-size: 14px
+			line-height: 16px
+			color: #fff
+			text-decoration: none
+			text-align: center
+			position: relative
+			+r(1259)
+				font-size: 16px
+
+
+	// widget related slots
+	&__slot-related
+
+		&-item
+			display: flex
+			align-items: center
+			padding: 10px 15px
+			width: 100%
+			color: $color-text
+			text-decoration: none
+			background-color: $color-white
+			border-radius: $border-radius
+			cursor: pointer
+
+			&:not(:last-child)
+				margin-bottom: 15px
+
+			&:hover
+				color: $color-blue
+
+		&-img
+			flex-shrink: 0
+			position: relative
+			margin-right: 15px
+
+			img
+				border-radius: 50%
+				border: 2px solid $color-white
+				position: relative
+
+			&::before
+				position: absolute
+				content: ''
+				width: 59px
+				height: 51px
+				top: 0
+				left: -3px
+				+svg(slot-related)
+
+		&-text
+			display: flex
+			flex-direction: column
+			justify-content: center
+			flex-grow: 1
+
+		&-title
+			color: inherit
+			font-size: 17px
+			line-height: 22px
+			pointer-events: none
+
+		&-descr
+			color: $color-dark
+			font-size: 14px
+			line-height: 20px
+
+
+	// widget slot of day
+	&__slot-day
+
+		&-item
+			display: block
+			text-decoration: none
+
+		&-img
+			border-radius: 30px 30px 0 0
+
+		&-text
+			width: 100%
+			display: flex
+			padding: 30px 15px 15px
+			text-align: center
+			flex-direction: column
+			background-color: $color-white
+			border-radius: 30px
+			position: relative
+			top: -30px
+
+			&::before
+				position: absolute
+				content: 'top'
+				top: -15px
+				left: 50%
+				transform: translateX(-50%)
+				padding: 5px 15px
+				color: $color-white
+				font-size: 14px
+				line-height: 20px
+				text-align: center
+				text-transform: uppercase
+				background-color: $color-blue
+				border-radius: 15px
+
+		&-title
+			color: $color-text
+			font-size: 20px
+			line-height: 22px
+			font-weight: 500
+			margin-bottom: 15px
+
+		&-wins,
+		&-total
+			color: $color-dark
+			font-size: 17px
+			line-height: 24px
+
+			span
+				font-weight: 700
+				font-size: 30px
+				line-height: 36px
+				background-image: linear-gradient(135deg, #2e47d7 0%,#fff 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e47d7', endColorstr='#ffffff',GradientType=1 )
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+
+		&-wins
+			margin-bottom: 7px
+
+
+	// widget developers
+	&__dev
+
+		&-list
+			counter-reset: devs
+
+		&-item
+			display: block
+			text-decoration: none
+			font-size: 16px
+
+			&:hover
+				color: #998BC5
+
+			&-wrap
+
+				&:not(:last-child)
+					margin-bottom: 10px
+
+		&-img
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 20px
+			height: 90px
+			border: 1px solid #00FF24
+			border-radius: $border-radius
+			position: relative
+			z-index: 1
+
+			img
+				max-height: 100%
+
+		&-title
+			width: 110px
+			display: flex
+			align-items: center
+			padding: 5px 10px
+			color: $color-text
+			font-size: 12px
+			line-height: 14px
+			text-align: center
+			background-color: rgba($color-white, .35)
+			border-radius: 0 0 10px 10px
+			position: relative
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+
+			svg,
+			span
+				margin-right: 5px
+
+
+	// widget links
+	&__links
+
+		&-item
+
+			&:not(:last-child)
+				margin-bottom: 10px
+
+			a
+				font-size: 16px
+				line-height: 22px
+				text-decoration: none
+				color: #FFFFFF
+
+				&:hover,
+				&:focus,
+				&:active
+					color: #998BC5
+
+.widget-news
+
+	.widget-content
+		padding: 15px 20px
+		background-color: $color-white
+		border: 2px solid $color-border
+		border-radius: $border-radius
+
+	.widget-news-item
+
+		&:not(:last-child)
+			margin-bottom: 10px
+
+	.widget-news-item-last
+		text-align: center
+
+	.widget-news-date
+		color: $color-grey
+		font-size: 14px
+		line-height: 25px
+		margin-bottom: 5px
+
+	.widget-news-title
+
+		a
+			color: $color-text
+			text-decoration: none
+
+			&:hover
+				color: $color-accent

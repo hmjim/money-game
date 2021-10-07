@@ -1,0 +1,256 @@
+@import ../helpers/mixins
+@import ../base/variables
+
+.menu
+	margin: 0
+	padding: 0
+	list-style-type: none
+	display: flex
+
+	li
+
+		&:not(:last-child)
+			margin-right: 10px
+
+		a
+			text-decoration: none
+
+.header__menu,
+.footer__menu
+	flex-grow: 1
+	display: flex
+	flex-wrap: wrap
+
+.header__menu
+	justify-content: center
+	+r(991)
+		display: none
+		padding-top: 20px
+		width: 100%
+		order: 5
+		justify-content: flex-start
+
+	.menu
+		+r(991)
+			flex-direction: column
+			align-items: center
+			width: 100%
+
+		> li
+			margin: 0 5px
+			position: relative
+			+r(1259)
+				margin: 0 10px
+			+r(991)
+				margin: 0 0 5px
+				width: 100%
+
+			> a
+				padding: 10px 30px
+				display: flex
+				flex-direction: row-reverse
+				align-items: center
+				justify-content: flex-end
+				color: $color-white
+				font-size: 20px
+				line-height: 23px
+				position: relative
+				border: 1px solid transparent
+				box-sizing: border-box
+				border-radius: 25px
+				+r(1259)
+					padding: 15px
+					font-size: 17px
+				+r(991)
+					padding: 0
+					margin: 0 0 5px
+
+				&:hover
+					border: 1px solid #00FF24
+					box-shadow: 8px 8px 16px rgba(0, 255, 36, 0.2), -8px -8px 16px rgba(0, 255, 36, 0.2)
+					+r(991)
+						border: 1px solid transparent
+						box-shadow: none
+
+				img
+					margin-right: 15px
+
+			&.current-menu-item
+
+				> a
+					border: 1px solid #00FF24
+					box-shadow: 8px 8px 16px rgba(0, 255, 36, 0.2), -8px -8px 16px rgba(0, 255, 36, 0.2)
+					+r(991)
+						border: 1px solid transparent
+						box-shadow: none
+
+			&.menu-item-has-children
+
+				> a
+					padding-right: 55px
+					position: relative
+
+					&::after
+						position: absolute
+						content: ''
+						width: 10px
+						height: 10px
+						top: 50%
+						right: 30px
+						margin-top: -2px
+						border-style: solid
+						border-color: #FFC529
+						border-width: 0 2px 2px 0
+						box-sizing: border-box
+						transform: translate(-50%, -50%) rotate(45deg)
+						+r(991)
+							display: none
+
+			&:hover
+
+				.sub-menu
+					opacity: 1
+					visibility: visible
+
+	.sub-menu
+		list-style-type: none
+		flex-direction: column
+		padding: 20px
+		position: absolute
+		min-width: 200px
+		top: 45px
+		left: 10px
+		text-align: left
+		transition: all .5s ease
+		background-color: #1B1237
+		border-radius: 15px
+		opacity: 0
+		visibility: hidden
+		z-index: 10
+		+r(1259)
+			left: -5px
+		+r(991)
+			align-items: flex-start
+			padding: 0
+			position: relative
+			top: 0
+			opacity: 1
+			visibility: visible
+			background-color: transparent
+			border-radius: 0
+			box-shadow: none
+
+		li
+			+r(991)
+				padding-bottom: 0
+				padding-left: 15px
+				margin: 0 0 5px
+
+			&:not(:last-child)
+				padding-bottom: 10px
+				+r(991)
+					padding-bottom: 0
+
+			a
+				color: #998BC5
+				font-size: 16px
+				line-height: 24px
+				+r(991)
+					font-size: 15px
+					margin: 0 0 5px
+
+				&:hover
+					color: $color-white
+
+	&.is-open
+		+r(991)
+			display: flex
+
+.footer__menu
+	padding: 0 24px
+	width: 25%
+	+r(991)
+		width: 50%
+		margin-bottom: 30px
+	+r(500)
+		width: 100%
+
+	&-wrapper
+		margin-left: -24px
+		margin-right: -24px
+		display: flex
+		flex-grow: 1
+		+r(991)
+			flex-wrap: wrap
+
+	&-item-title
+		font-size: 20px
+		line-height: 23px
+		color: $color-white
+		margin: 0 0 20px
+
+	.menu
+		flex-direction: column
+
+		li
+
+			&:not(:first-child)
+				margin: 0 0 10px
+
+			a
+				padding: 0
+				display: inline-block
+				font-size: 16px
+				line-height: 22px
+				color: #998BC5
+
+				&:hover
+					color: $color-white
+
+.burger
+	display: none
+	width: 66px
+	height: 66px
+	position: relative
+	margin-left: 20px
+	cursor: pointer
+	+r(991)
+		display: block
+		order: 3
+	+r(374)
+		margin-left: 15px
+		width: 50px
+		height: 50px
+		border-radius: 4px
+
+	&::before,
+	&::after
+		position: absolute
+		content: ''
+		height: 3px
+		left: calc(50% - 16px)
+		top: calc(50% - 1px)
+		background-color: $color-white
+		transition: all .2s ease
+
+	&::before
+		width: 32px
+		margin-top: -4px
+
+	&::after
+		width: 24px
+		margin-top: 4px
+
+	&.is-open
+
+		&::before,
+		&::after
+			margin-top: 0
+
+		&::before
+			transform: translateY(-50%) rotate(45deg)
+
+		&::after
+			width: 32px
+			transform: translateY(-50%) rotate(-45deg)
+
