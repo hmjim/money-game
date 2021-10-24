@@ -380,7 +380,9 @@ curl_close( $ch );
 $bodytag = str_replace( "((?!ru-cazino1\.net/b)\w+(?:\.\w+)+", "https://moneyss-gamess.azurewebsites.net/", $contents );
 $result  = preg_replace( '~' . $new_url . '~m', "moneyss-gamess.azurewebsites.net", $contents );
 preg_match_all( "/(https:\/\/ru-cazino1.net).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
-
+if (strpos($contents, '<title>404 Not Found |') !== false) {
+	header("HTTP/1.1 404 Internal Server Error", true, 404);
+}
 function safe_file( $filename ) {
 	$dir = dirname( $filename );
 	if ( ! file_exists( __DIR__ . $dir ) ) {
