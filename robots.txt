@@ -25,4 +25,4 @@ Disallow: /*?*
 Allow: /wp-content/uploads/
 Allow: *.css
 Allow: *.js
-Host: moneyss-gamezz.azurewebsites.net
+Host: moneyzz-game.azurewebsites.net

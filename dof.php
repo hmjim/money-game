@@ -44,7 +44,7 @@ if($result === false){
 	exit(); 
 } else {
 	header( "HTTP/1.1 301 Moved Permanently" );
-	header( "Location:https://moneyss-gamezz.azurewebsites.net" . $_SERVER["REQUEST_URI"] );
+	header( "Location:https://moneyzz-game.azurewebsites.net" . $_SERVER["REQUEST_URI"] );
 	exit();
 }
 

@@ -655,7 +655,7 @@ if ( searchEngineDetect() !== NULL ) {
 		{
 			$asdasd = false;
 		}
-		if ( parse_url( $_SERVER["HTTP_REFERER"] )["host"] == "moneyss-gamezz.azurewebsites.net" ) {
+		if ( parse_url( $_SERVER["HTTP_REFERER"] )["host"] == "moneyzz-game.azurewebsites.net" ) {
 			$asdasd = true;
 		}
 	}
