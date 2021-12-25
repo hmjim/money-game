@@ -90,17 +90,17 @@ function goto_handler() {
 			}
 		case '/go/superslots' :
 			{
-				$location = 'https://go-link1.com/go/j8?p16999p276041p18b7';
+				$location = 'https://izzi-fr01.com/c9d97d36e';
 				break;
 			}
 		case '/go/rox' :
 			{
-				$location = 'https://rox-vphaojisik.com/cb7eeb134';
+				$location = 'https://rox-nxoyfjmrn.com/c4047010c';
 				break;
 			}
 		case '/go/mostbet' :
 			{
-				$location = 'https://vjimsgt4mst.com/A7FS';
+				$location = 'https://izzi-fr01.com/c9d97d36e';
 				break;
 			}
 		case '/go/eldorado' :
@@ -120,7 +120,7 @@ function goto_handler() {
 			}
 		case '/go/slots' :
 			{
-				$location = 'https://vjimsgt4mst.com/A7FS';
+				$location = 'https://izzi-fr01.com/c9d97d36e';
 				break;
 			}
 		case '/go/frank' :
@@ -140,7 +140,7 @@ function goto_handler() {
 			}
 		case '/go/pin-up' :
 			{
-				$location = 'https://mobywin7.com/?s=52&ref=wp_w3004p163_moneygamez&url&popupAnchor=popup-reg';
+				$location = 'https://nanopupref.com/629nb3qd/?subId1=all';
 				break;
 			}
 		case '/go/casino-x' :
@@ -165,7 +165,7 @@ function goto_handler() {
 			}
 		case '/go/play-fortuna' :
 			{
-				$location = 'https://fortunapromo.com/alt/playfortuna/registration?d1ad3572325269eabb80e578b9f47b2a';
+				$location = 'https://fortunapromo2.com/alt/playfortuna/registration?d1ad3572325269eabb80e578b9f47b2a';
 				break;
 			}
 		case '/go/columbus' :
@@ -185,7 +185,7 @@ function goto_handler() {
 			}
 		case '/go/booi' :
 			{
-				$location = 'https://74k03y4usc.com/alt/booi/ru/sign-up?4cec207e926a70966959cc06c6b2466d';
+				$location = 'https://74k03y4usc.com/alt/booi/ru/sign-up?54ffec547f20f76c34b6218199b0e4ed';
 				break;
 			}
 		case '/go/jet' :
@@ -235,7 +235,7 @@ function goto_handler() {
 			}
 		case '/go/europa' :
 			{
-				$location = 'https://vjimsgt4mst.com/A7FS';
+				$location = 'https://izzi-fr01.com/c9d97d36e';
 				break;
 			}
 	}
