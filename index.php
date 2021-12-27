@@ -45,7 +45,7 @@ function goto_handler() {
 
 		case '/go/azino-777' :
 			{
-				$location = 'https://scp-promo.com/l/60eddb31396c642e0c022463';
+				$location = 'https://izzi-fr01.com/c9d97d36e';
 				break;
 			}
 		case '/go/vulkan-24' :
@@ -230,7 +230,7 @@ function goto_handler() {
 			}
 		case '/go/admiral' :
 			{
-				$location = 'https://scp-promo.com/l/60edd9fa3980a90b51614189';
+				$location = 'https://izzi-fr01.com/c9d97d36e';
 				break;
 			}
 		case '/go/europa' :
