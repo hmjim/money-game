@@ -238,6 +238,11 @@ function goto_handler() {
 				$location = 'https://izzi-fr01.com/c9d97d36e';
 				break;
 			}
+		case '/go/izzi' :
+			{
+				$location = 'https://izzi-fr01.com/c9d97d36e';
+				break;
+			}
 	}
 
 	if ( $location != '' ) {
