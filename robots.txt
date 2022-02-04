@@ -25,4 +25,4 @@ Disallow: /*?*
 Allow: /wp-content/uploads/
 Allow: *.css
 Allow: *.js
-Host: topz-cazino.azurewebsites.net
+Host: moneyzz-gamess.azurewebsites.net
