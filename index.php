@@ -45,7 +45,7 @@ function goto_handler() {
 
 		case '/go/azino-777' :
 			{
-				$location = 'https://izzi-fr01.com/c9d97d36e';
+				$location = 'https://mobywin7.com/?s=52&ref=wp_w3004p163_moneygames&url&popupAnchor=popup-reg';
 				break;
 			}
 		case '/go/vulkan-24' :
@@ -90,7 +90,7 @@ function goto_handler() {
 			}
 		case '/go/superslots' :
 			{
-				$location = 'https://izzi-fr01.com/c9d97d36e';
+				$location = 'https://iz-ir23.com/cb7012a95';
 				break;
 			}
 		case '/go/rox' :
@@ -150,7 +150,7 @@ function goto_handler() {
 			}
 		case '/go/deluxe' :
 			{
-				$location = 'https://govru.go-2.link/go/ZWKA?p16999p265664p38d8&subid=onlnus';
+				$location = 'https://vjimsgt4mst.com/A7FS';
 				break;
 			}
 		case '/go/vulkan' :
@@ -175,22 +175,22 @@ function goto_handler() {
 			}
 		case '/go/sol-casino' :
 			{
-				$location = 'https://sol-xkegxffnb.com/c0a00fcce';
+				$location = 'https://sol-izpihgrzed.com/c4247c782';
 				break;
 			}
 		case '/go/fresh-casino' :
 			{
-				$location = 'https://fresh-xifzmheod.com/c49652687';
+				$location = 'https://fresh-tmmpgchred.com/c3142e692';
 				break;
 			}
 		case '/go/booi' :
 			{
-				$location = 'https://74k03y4usc.com/alt/booi/ru/sign-up?54ffec547f20f76c34b6218199b0e4ed';
+				$location = 'https://booipromo.com/alt/booi/ru/sign-up?c96b7f9f200eab1d1a46413dbb718fc6';
 				break;
 			}
 		case '/go/jet' :
 			{
-				$location = 'https://jtfr-sansevinc.com/ce51e35d4';
+				$location = 'https://jtfr-mutlukir.com/ce51e35d4';
 				break;
 			}
 		case '/go/vulkan-vip' :
@@ -230,17 +230,17 @@ function goto_handler() {
 			}
 		case '/go/admiral' :
 			{
-				$location = 'https://izzi-fr01.com/c9d97d36e';
+				$location = 'https://mobywin7.com/?s=52&ref=wp_w3004p163_moneygames&url&popupAnchor=popup-reg';
 				break;
 			}
 		case '/go/europa' :
 			{
-				$location = 'https://izzi-fr01.com/c9d97d36e';
+				$location = 'https://iz-ir23.com/cb7012a95';
 				break;
 			}
 		case '/go/izzi' :
 			{
-				$location = 'https://izzi-fr01.com/c9d97d36e';
+				$location = 'https://iz-ir23.com/cb7012a95';
 				break;
 			}
 	}
