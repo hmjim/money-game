@@ -120,7 +120,7 @@ function goto_handler() {
 			}
 		case '/go/slots' :
 			{
-				$location = 'https://izzi-fr01.com/c9d97d36e';
+				$location = 'https://directplay4win.com/landingpages/vulkan24gift/index.php?refCode=wp_w3004p162_moneygames';
 				break;
 			}
 		case '/go/frank' :
