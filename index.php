@@ -100,7 +100,7 @@ function goto_handler() {
 			}
 		case '/go/mostbet' :
 			{
-				$location = 'https://vjimsgt4mst.com/A7FS';
+				$location = 'https://vjimsgt4mst.com/x0FS';
 				break;
 			}
 		case '/go/eldorado' :
