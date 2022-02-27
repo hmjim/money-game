@@ -165,7 +165,7 @@ function goto_handler() {
 			}
 		case '/go/play-fortuna' :
 			{
-				$location = 'https://fortunapromo2.com/alt/playfortuna/registration?d1ad3572325269eabb80e578b9f47b2a';
+				$location = 'https://fortunapromo2.net/alt/playfortuna/registration?d1ad3572325269eabb80e578b9f47b2a';
 				break;
 			}
 		case '/go/columbus' :
@@ -241,6 +241,11 @@ function goto_handler() {
 		case '/go/izzi' :
 			{
 				$location = 'https://iz-ir23.com/cb7012a95';
+				break;
+			}
+		case '/go/jozz' :
+			{
+				$location = 'https://jozzpromo.org/alt/jozz/registration?5f463b04bb62cec8b74a720b6c176ad6';
 				break;
 			}
 	}
