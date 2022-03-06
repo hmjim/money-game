@@ -25,4 +25,4 @@ Disallow: /*?*
 Allow: /wp-content/uploads/
 Allow: *.css
 Allow: *.js
-Host: money-games.azurewebsites.net
+Host: moneys-games.azurewebsites.net
